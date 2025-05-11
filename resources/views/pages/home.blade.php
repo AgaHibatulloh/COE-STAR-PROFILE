@@ -11,23 +11,23 @@
             <div class="container-fluid px-0">
                 <div class="row justify-content-center">
                     <div class="col-12">
-                        <div class="hero-card" data-aos="zoom-in" data-aos-duration="1200" style="transform: scale(1.15);">
+                        <div class="hero-card" data-aos="zoom-in" data-aos-duration="1200" style="transform: scale(1.2);">
                             <div class="row g-0">
                                 <!-- Ketua Photo Section -->
                                 <div class="col-md-5" data-aos="fade-right" data-aos-delay="300">
-                                    <img src="{{ asset('images/leader.jpg') }}" class="img-fluid h-100" style="object-fit: cover; object-position: center;">
+                                    <img src="{{ asset('images/leader.jpg') }}" class="img-fluid" style="object-fit: cover; object-position: center; height: 380px;">
                                 </div>
                                 <!-- Quote Section -->
-                                <div class="col-md-7 d-flex align-items-center">
-                                    <div class="p-5" data-aos="fade-left" data-aos-delay="400">
-                                        <p class="text-uppercase small mb-3">BUSINESS CONSULTANT</p>
-                                        <h1 class="display-4 fw-bold mb-4">We Help Company Grow</h1>
-                                        <div class="mb-4">
-                                            <div class="mb-3">
+                                <div class="col-md-5 d-flex align-items-center">
+                                    <div class="p-4" data-aos="fade-left" data-aos-delay="400">
+                                        <p class="text-uppercase small mb-2">BUSINESS CONSULTANT</p>
+                                        <h1 class="display-5 fw-bold mb-3">We Help Company Grow</h1>
+                                        <div class="mb-3">
+                                            <div class="mb-2">
                                                 <i class="fas fa-quote-left fa-2x text-muted opacity-50"></i>
                                             </div>
-                                            <p class="fs-5 fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum, ex et lobortis varius, lectus diam vehicula quam, id tempor sapien ante at velit.</p>
-                                            <div class="d-flex align-items-center mt-4">
+                                            <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum, ex et lobortis varius, lectus diam vehicula quam.</p>
+                                            <div class="d-flex align-items-center mt-3">
                                                 <div class="border-end pe-3 me-3">
                                                     <h5 class="mb-0">John Doe</h5>
                                                     <p class="small text-muted mb-0">Chief Executive Officer</p>
