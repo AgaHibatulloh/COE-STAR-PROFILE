@@ -97,26 +97,42 @@
 <section class="team-section" id="team">
     <div class="container my-5">
         <h2 class="text-center mb-5 display-5 fw-bold" data-aos="fade-up">Anggota Kami</h2>
-        <div class="row">
-            <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
-                <div class="team-member">
-                    <img src="{{ asset('images/member1.jpg') }}" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
-                    <h5>John Doe</h5>
-                    <p>CEO</p>
+        
+        <!-- Kategori 1 -->
+        <div class="mb-5">
+            <h4 class="text-center mb-4 text-uppercase" data-aos="fade-up" data-aos-delay="100">Pemimpin Inovasi</h4>
+            <div class="row justify-content-center">
+                <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-member">
+                        <img src="{{ asset('images/member1.jpg') }}" class="rounded-circle mb-3 mx-auto d-block" style="width: 150px; height: 150px; object-fit: cover;">
+                        <h5>John Doe</h5>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
-                <div class="team-member">
-                    <img src="{{ asset('images/member2.jpg') }}" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
-                    <h5>Jane Smith</h5>
-                    <p>CTO</p>
+        </div>
+        
+        <!-- Kategori 2 -->
+        <div class="mb-5">
+            <h4 class="text-center mb-4 text-uppercase" data-aos="fade-up" data-aos-delay="100">Tim Teknologi</h4>
+            <div class="row justify-content-center">
+                <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-member">
+                        <img src="{{ asset('images/member2.jpg') }}" class="rounded-circle mb-3 mx-auto d-block" style="width: 150px; height: 150px; object-fit: cover;">
+                        <h5>Jane Smith</h5>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="300">
-                <div class="team-member">
-                    <img src="{{ asset('images/member3.jpg') }}" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
-                    <h5>Michael Brown</h5>
-                    <p>COO</p>
+        </div>
+        
+        <!-- Kategori 3 -->
+        <div>
+            <h4 class="text-center mb-4 text-uppercase" data-aos="fade-up" data-aos-delay="100">Tim Operasional</h4>
+            <div class="row justify-content-center">
+                <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-member">
+                        <img src="{{ asset('images/member3.jpg') }}" class="rounded-circle mb-3 mx-auto d-block" style="width: 150px; height: 150px; object-fit: cover;">
+                        <h5>Michael Brown</h5>
+                    </div>
                 </div>
             </div>
         </div>

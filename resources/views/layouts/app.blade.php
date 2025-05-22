@@ -208,30 +208,60 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="/" data-aos="fade-right" data-aos-duration="1000">
-                <img src="{{ asset('images/logo.jpg') }}" alt="LOGO" height="60">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="{{ url('/') }}">Smart Transfortaion and Robotics (STAR)</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item" data-aos="fade-down" data-aos-delay="100">
-                        <a class="nav-link" href="/about">About</a>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->is('/') ? 'active' : '' }}" href="{{ url('/') }}">Beranda</a>
                     </li>
-                    <li class="nav-item" data-aos="fade-down" data-aos-delay="200">
-                        <a class="nav-link" href="/services">Services</a>
+                    
+                    <!-- Dropdown About -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tentang Kami
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="{{ url('/about') }}">Profil</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/visi-misi') }}">Visi & Misi</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/sejarah') }}">Sejarah</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item" data-aos="fade-down" data-aos-delay="300">
-                        <a class="nav-link" href="/blog">Blog</a>
+                    
+                    <!-- Dropdown Layanan -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Layanan
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="{{ url('/konsultasi') }}">Konsultasi</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/penelitian') }}">Penelitian</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/pelatihan') }}">Pelatihan</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item" data-aos="fade-down" data-aos-delay="400">
-                        <a class="nav-link" href="/contact">Contact</a>
+                    
+                    <!-- Dropdown Penelitian -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="researchDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Penelitian
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="researchDropdown">
+                            <li><a class="dropdown-item" href="{{ url('/publikasi') }}">Publikasi</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/jurnal') }}">Jurnal</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/artikel') }}">Artikel</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item ms-2" data-aos="fade-down" data-aos-delay="500">
-                        <a class="btn btn-dark" href="/contact">Button</a>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->is('team') ? 'active' : '' }}" href="{{ url('/team') }}">Tim</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->is('contact') ? 'active' : '' }}" href="{{ url('/contact') }}">Kontak</a>
                     </li>
                 </ul>
             </div>
